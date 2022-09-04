@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+    .container1 {
+           width: 1890px;
+           height: 480px;
+           margin: 0 auto;
+           padding: 0;
+           background-image: url(/R.jpg);
+           background-size: cover;
+           float: left;
+       }
+
+        header nav {
+        border-bottom: 2px solid black;
+     }
+
+    /* 메인 메뉴 */
+        header nav a:link,
+        header nav a :visited {
+        text-align: center;
+        text-decoration: none;
+        color: skyblue;
+        font-size: 25px;
+        background-color: aqua;
+        background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        header nav a[href] {
+
+        font-size: 19px;
+        font-weight: normal;
+        text-decoration: none;
+        color: white;
+        }
+
+        li {
+        width: 200px;
+        text-align: center;
+        margin: 0px;
+        display: inline-block;
+        text-decoration: none;
+        }
+
+        header nav a:hover,
+        header nav a:focus {
+        background-color: black;
+        color: #fff;
+        }
+
+        header nav a:active {
+        background-color: red;
+        }
+
+        section div {
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 60%;
+        margin: 20px;
+        padding: 20px;
+        }
+
+        header nav h1 {
+        text-align: center;
+        padding: 0px;
+        font-size: 57px;
+        color: white;
+        font-family: 'Nanum Gothic Coding', monospace;
+        }
+
+        ul {
+        text-align: center;
+        }
+
+        .container2 {
+        width: 1890px;
+        height: 194px;
+        background-color: rgba(7, 64, 150, 0.9);
+        float: left;
+        }
+
+        #container3 {
+        width: 1890px;
+        height: 286px;
+        background-color: rgba(0, 153, 255, 0.4);
+        float: right;
+        margin: 0 auto;
+        padding: 0 auto;
+        }
+
+
+
+        header div h3 {
+        font-size: 50px;
+        color: white;
+        margin: 40px;
+        padding: 30px;
+        font-family: 'Nanum Gothic Coding', monospace;
+        line-height: 70px;
+        text-align: center;
+        }
+
+    header h2 {
+            color: black;
+            margin: 20px 20px;
+            padding: 0 auto;
+            font-size: 50px;
+            font-family: 'Nanum Gothic Coding', monospace;
+            text-align: center;
+            
+            
+        }
+
+        .card {
+            margin: 81px;
+            padding: 0 auto;
+            width: 300px;
+            height: 500px;
+            border: 1px solid gray;
+            border-radius: 3%;
+            overflow: hidden;
+            line-height: 40px;
+           
+            text-align: center;
+            list-style: none;
+            position: relative; overflow: hidden;
+           z-index: 5;
+           display: inline-block;
+           
+        }
+        .card .caption {
+            position: absolute; top: 200px; width: 260px; height: 500px; 
+            padding-top: 20px; background: rgba(0,0,0,0.6); opacity: 0; transition: all 0.2s ease-in-out;  z-index: 10;
+            margin: 0;
+        }
+
+        .card:hover .caption { opacity: 1; transform: translateY(-200px); }
+
+        .card .caption h1, .card .caption p { color: #fff; text-align: center; }
+
+
+        #pic1 {
+            background-image: url(/room1.jpg);
+            width: 300px;
+            height: 500px;
+            background-size: cover;
+            margin: 0 auto;
+        }
+
+        #pic2 {
+            background-image: url(/room2.jpg);
+            width: 300px;
+            height: 500px;
+            background-size: cover;
+            margin: 0 auto;
+        }
+
+        #pic3 {
+            background-image: url(/room3.jpg);
+            width: 300px;
+            height: 500px;
+            background-size: cover;
+            margin: 0 auto ;
+        }
+
+        #pic4 {
+            background-image: url(/room4.png);
+            width: 300px;
+            height: 500px;
+            background-size: cover;
+            margin: 0 auto;
+        }
+
+        section div h3 {
+            margin: 0 auto;
+            padding: 0 auto;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        section a[href] {
+            font-size: 30px;
+            font-family: 'Nanum Gothic Coding', monospace;
+        }
+
+        footer {
+            background-color:  rgba(7, 64, 150, 0.3);
+            bottom: 0;
+            text-align: center;
+            color: black;
+            margin: 2px;
+            padding: 2px;
+            font-family: 'Nanum Gothic Coding', monospace;
+        }
+
+        footer p {
+            font-size: 15px;
+        }
+
+        section div a {
+            color: white;
+        }
+   </style>
+</head>
+<body>
+  
+       <header class="container1" id="comback">
+           <nav class="container2" id="start">
+            <a href="/index.html"><h1> ㅍㅔㄴㅅㅕㄴ</h1></a>
+               <ul>
+                   <li><a href="/intro.html">프롤로그</a></li>
+                   <li><a href="/room.html">객실 소개</a></li>
+                   <li><a href="/reservation.html">예약안내</a></li>
+                   <li><a href="/rule.html">이용약관</a></li>
+               </ul>
+               <div id="container3">
+                   <h3>
+                       여행 중 만난 또 하나의 집<br> 최고의 홀리데이 하우스를 만나보세요.
+                   </h3>
+               </div>
+           </nav>
+   
+        </header>
+    
+    <header>
+        <h2>객실 소개</h2>
+        <section class="card">
+            <p id="pic1"></p>
+            <div class="caption">
+                <h1>one room</h1>
+                <p>넓은 수영장이 특징인</p>
+                <a href="/reservation.html">예약하러 가기</a>
+               </div>
+          
+        </section>
+
+        <section class="card">
+            <p id="pic2"></p>
+            <div class="caption">
+                <h1>two room</h1>
+                <p>크고 넓어서 여러명이서 <br>오기 좋은</p>
+                <a href="/reservation.html">예약하러 가기</a>
+               </div>
+        </section>
+
+        <section class="card">
+            <p id="pic3"></p>
+            <div class="caption">
+                <h1>three room</h1>
+                <p>마당이 있어 파티하기에 좋은</p>
+                <a href="/reservation.html">예약하러 가기</a>
+               </div>
+        </section>
+
+        <section class="card">
+            <p id="pic4"></p>
+            <div class="caption">
+                <h1>four room</h1>
+                <p>저렴하고 아늑한</p>
+                <a href="/reservation.html">예약하러 가기</a>
+               </div>
+        </section>
+       
+   
+       
+    </header>
+    
+    <footer>
+        <p><b>상호명</b> ㅍㅔㄴㅅㅕㄴ <b>대표자</b> 정지섭</p>
+        <p><b>연락처</b> 010-4812-6901</p>
+        <p><b>입금계좌</b> 7777-02-3556966</p>
+    </footer>
+
+</body>
+
+</html>
